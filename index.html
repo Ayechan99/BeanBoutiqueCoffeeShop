@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="BeanBoutique coffee shop by Ashley">
+
+    <title>Home | BeanBoutique</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/Final.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a class="logo" href="index.html">
+            <i class="fa-solid fa-mug-hot"></i>
+            Bean<span>Boutique</span>
+        </a>
+
+        <button class="menu"
+            id="menuBtn"
+            type="button"
+            aria-label="Open navigation menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+
+            <a href="coffee.html">Coffee</a>
+
+            <a href="equipment.html">Equipment</a>
+
+            <a href="events.html">Events</a>
+
+            <a href="offers.html">Offers</a>
+
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <b id="cartCount">0</b>
+            </a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero carousel -->
+        <div class="coffee_pic">
+
+            <!-- Slide 1 -->
+            <article class="slide active">
+
+                <video class="slide-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline>
+
+                    <source src="Videos/Coffee_beans_falling.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <div class="slide-text">
+
+                    <div>
+
+                        <h1>Your coffee ritual, refined.</h1>
+
+                        <p>
+                            Premium beans, elegant equipment,
+                            and everything between.
+                        </p>
+
+                        <a class="button" href="coffee.html">
+                            Explore coffee
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Slide 2 -->
+            <article class="slide">
+
+                <video class="slide-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline>
+
+                    <source src="Videos/Equipment.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <div class="slide-text">
+
+                    <div>
+
+                        <h2>Brew better, your way.</h2>
+
+                        <p>
+                            Everything you need to create a coffee ritual
+                            that feels uniquely yours.
+                        </p>
+
+                        <a class="button" href="equipment.html">
+                            View equipment
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Slide 3 -->
+            <article class="slide">
+
+                <video class="slide-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline>
+
+                    <source src="Videos/People_enjoying_coffee.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <div class="slide-text">
+
+                    <div>
+
+                        <h2>Taste. Explore. Connect.</h2>
+
+                        <p>
+                            Join friendly tastings and hands-on workshops
+                            made for curious coffee lovers.
+                        </p>
+
+                        <a class="button" href="events.html">
+                            See events
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Carousel controls -->
+            <div class="controls">
+
+                <button id="prev"
+                    type="button"
+                    aria-label="Previous slide">
+                    ‹
+                </button>
+
+                <button id="next"
+                    type="button"
+                    aria-label="Next slide">
+                    ›
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Coffee search and features -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="heading">
+
+                    <h2>Find your coffee corner</h2>
+
+                    <p>
+                        Search the visible home-page content as you type.
+                    </p>
+
+                </div>
+
+
+                <label class="search" for="homeSearch">
+
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <input
+                        id="homeSearch"
+                        type="search"
+                        placeholder="Search coffee, brewing or events">
+
+                </label>
+
+
+                <div class="grid features">
+
+                    <!-- Feature 1 -->
+                    <article class="box feature content" data-search>
+
+                        <h3>
+                            <i class="fa-solid fa-seedling"></i>
+                            Small-batch coffee
+                        </h3>
+
+                        <p>
+                            House blends and single origins with tasting notes.
+                        </p>
+
+                        <a class="button" href="coffee.html">
+                            Browse beans
+                        </a>
+
+                    </article>
+
+
+                    <!-- Feature 2 -->
+                    <article class="box feature content" data-search>
+
+                        <h3>
+                            <i class="fa-solid fa-mug-hot"></i>
+                            Brewing corner
+                        </h3>
+
+                        <p>
+                            Pour-over, French press, espresso and grinder guides.
+                        </p>
+
+                        <a class="button" href="equipment.html">
+                            See equipment
+                        </a>
+
+                    </article>
+
+
+                    <!-- Feature 3 -->
+                    <article class="box feature content" data-search>
+
+                        <h3>
+                            <i class="fa-solid fa-users"></i>
+                            Learn together
+                        </h3>
+
+                        <p>
+                            Tastings, brewing classes and meet-the-roaster events.
+                        </p>
+
+                        <a class="button" href="events.html">
+                            View workshops
+                        </a>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Coffee and community stories -->
+                <div class="coffee-stories">
+
+                    <div class="heading">
+
+                        <h2>Coffee Brings Us Together</h2>
+
+                        <p>
+                            More than a cup of coffee, BeanBoutique is a place
+                            to slow down, connect and enjoy the moment.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Story 1 -->
+                    <article class="coffee-story">
+
+                        <div class="story-image">
+
+                            <img
+                                src="Images/PeopleEnjoyingCoffee.jpg"
+                                alt="Friends enjoying coffee together">
+
+                        </div>
+
+
+                        <div class="story-text">
+
+                            <span class="story-label">
+                                <i class="fa-solid fa-mug-hot"></i>
+                                Coffee &amp; Conversations
+                            </span>
+
+                            <h3>
+                                Good coffee starts a good conversation.
+                            </h3>
+
+                            <p>
+                                Whether it's a morning catch-up or a quiet
+                                afternoon with friends, our coffee is made
+                                to be enjoyed together. Take a seat, order
+                                your favourite brew and stay awhile.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Story 2 -->
+                    <article class="coffee-story reverse">
+
+                        <div class="story-image">
+
+                            <img
+                                src="Images/Coffee_1.jpg"
+                                alt="Coffee cups">
+
+                        </div>
+
+
+                        <div class="story-text">
+
+                            <span class="story-label">
+                                <i class="fa-solid fa-heart"></i>
+                                Made to Be Shared
+                            </span>
+
+                            <h3>
+                                Every cup has a moment behind it.
+                            </h3>
+
+                            <p>
+                                From sharing a new favourite blend to
+                                discovering a new brewing method, BeanBoutique
+                                is a welcoming space for coffee lovers to
+                                explore and enjoy something together.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Story 3 -->
+                    <article class="coffee-story">
+
+                        <div class="story-image">
+
+                            <img
+                                src="Images/workshop.jpg"
+                                alt="Coffee lovers enjoying time together">
+
+                        </div>
+
+
+                        <div class="story-text">
+
+                            <span class="story-label">
+                                <i class="fa-solid fa-users"></i>
+                                Our Community
+                            </span>
+
+                            <h3>
+                                A coffee community made for everyone.
+                            </h3>
+
+                            <p>
+                                Join tastings, workshops and friendly coffee
+                                events, meet fellow coffee lovers and discover
+                                new flavours along the way.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Best Sellers -->
+                <div class="best-sellers">
+
+                    <div class="heading">
+
+                        <h2>Our Best Sellers</h2>
+
+                        <p>
+                            Customer favourites, carefully selected for
+                            your next coffee ritual.
+                        </p>
+
+                    </div>
+
+
+                    <div class="best-seller-grid">
+
+                        <!-- Best Seller 1 -->
+                        <article class="best-seller-card">
+
+                            <img
+                                src="Images/Columbia_Alto.jpg"
+                                alt="BeanBoutique Columbia Alto coffee beans">
+
+                            <div class="best-seller-info">
+
+                                <span class="seller-tag">
+                                    BEST SELLER
+                                </span>
+
+                                <h3>Columbia Alto</h3>
+
+                                <p>
+                                    Caramel sweetness with a red-fruit brightness.
+                                </p>
+
+                                <div class="seller-bottom">
+
+                                    <strong>$16.00</strong>
+
+                                    <a href="coffee.html" class="button">
+                                        Shop coffee
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Best Seller 2 -->
+                        <article class="best-seller-card">
+
+                            <img
+                                src="Images/night_shift_espresso.jpg"
+                                alt="BeanBoutique Nightshift Espresso coffee beans">
+
+                            <div class="best-seller-info">
+
+                                <span class="seller-tag">
+                                    FAVOURITE
+                                </span>
+
+                                <h3>Nightshift Espresso</h3>
+
+                                <p>
+                                    Bright and smooth with notes of red berries,
+                                    brown sugar and gentle citrus.
+                                </p>
+
+                                <div class="seller-bottom">
+
+                                    <strong>$15.00</strong>
+
+                                    <a href="coffee.html" class="button">
+                                        Shop coffee
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Community and map -->
+        <section class="section">
+
+            <div class="container community">
+
+                <!-- Community feed -->
+                <div class="widget">
+
+                    <h2>Community feed</h2>
+
+                    <p>
+                        Social-feed widget area for a future Instagram feed plugin.
+                    </p>
+
+                    <div class="posts">
+
+                        <span>
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-seedling"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-camera"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-heart brown-heart"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-star star"></i>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Interactive map -->
+                <div class="widget map">
+
+                    <h2>Find BeanBoutique</h2>
+
+                    <iframe
+                        title="Interactive map showing the BeanBoutique location"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.13268%2C51.50174%2C-0.11268%2C51.52174&amp;layer=mapnik&amp;marker=51.51174%2C-0.12268">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Welcome discount modal -->
+    <div class="modal" id="modal">
+
+        <div class="modal-card">
+
+            <button
+                class="close"
+                id="close"
+                type="button"
+                aria-label="Close welcome offer">
+                ×
+            </button>
+
+            <h2>
+                <i class="fa-solid fa-mug-hot"></i>
+                A little welcome gift
+            </h2>
+
+            <p>
+                Get <b>50% off your first coffee order</b>
+                when you join our coffee gang.
+            </p>
+
+            <form id="discountForm">
+
+                <input
+                    id="discountEmail"
+                    type="email"
+                    placeholder="you@example.com"
+                    required>
+
+                <button class="button" type="submit">
+                    Unlock 50% off
+                </button>
+
+            </form>
+
+            <p class="promo">
+                BEAN39
+            </p>
+
+            <small id="discountMsg">
+                Use this code in your basket.
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-grid">
+
+            <!-- About -->
+            <section>
+
+                <h3>
+                    <i class="fa-solid fa-mug-hot"></i>
+                    BeanBoutique
+                </h3>
+
+                <p>
+                    Small-batch coffee, useful brewing gear
+                    and friendly coffee events.
+                </p>
+
+                <p>
+                    42 Roast Lane<br>
+                    Downtown Coffee Quarter
+                </p>
+
+            </section>
+
+
+            <!-- Explore -->
+            <section>
+
+                <h3>Explore</h3>
+
+                <a href="coffee.html">Coffee</a>
+
+                <a href="equipment.html">Equipment</a>
+
+                <a href="events.html">Events</a>
+
+                <a href="offers.html">Subscriptions</a>
+
+            </section>
+
+
+            <!-- Opening hours and social media -->
+            <section>
+
+                <h3>Opening hours</h3>
+
+                <p>
+                    Mon–Sat: 8:00–18:00<br>
+                    Sun: 9:00–16:00
+                </p>
+
+                <div class="social-links">
+
+                    <a
+                        href="https://www.facebook.com/YourPageName"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.instagram.com/YourUsername"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.tiktok.com/@YourUsername"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="TikTok">
+
+                        <i class="fa-brands fa-tiktok"></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- Newsletter -->
+            <section>
+
+                <h3>Newsletter</h3>
+
+                <form id="footerForm">
+
+                    <label class="sr" for="footerEmail">
+                        Email
+                    </label>
+
+                    <input
+                        id="footerEmail"
+                        type="email"
+                        placeholder="Email address"
+                        required>
+
+                    <button type="submit">
+                        Join
+                    </button>
+
+                </form>
+
+                <small id="footerMsg"></small>
+
+            </section>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <i class="fa-regular fa-copyright"></i>
+            2026 BeanBoutique
+
+        </div>
+
+    </footer>
+
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- BeanBoutique JavaScript -->
+    <script src="js/Final.js"></script>
+
+</body>
+
+</html>

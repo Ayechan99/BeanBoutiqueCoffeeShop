@@ -1,0 +1,264 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BeanBoutique coffee shop">
+    <title>Cart | BeanBoutique</title>
+
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+<link rel="stylesheet" href="css/Final.css">
+
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+    <a class="logo" href="index.html">
+        <i class="fa-solid fa-mug-hot"></i>
+        Bean<span>Boutique</span>
+    </a>
+
+    <button class="menu" id="menuBtn" type="button">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html">Offers</a>
+        <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <b id="cartCount">0</b>
+        </a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="heading">
+
+        <div class="container">
+
+            <h1>Sip Plans Start Here</h1>
+
+        </div>
+
+    </section>
+
+
+    <div class="section">
+
+        <div class="container cart-layout">
+
+            <div id="items" class="cart-items">
+            </div>
+
+
+            <aside class="summary">
+
+                <h2>Order summary</h2>
+
+                <div class="sumline">
+                    <span>Subtotal</span>
+                    <span id="sub">$0.00</span>
+                </div>
+
+
+                <div class="promo-form">
+
+                    <input
+                        id="promoCode"
+                        type="text"
+                        placeholder="BEAN39"
+                        aria-label="Promotion code"
+                    >
+
+                    <button
+                        id="promo"
+                        class="button"
+                        type="button"
+                    >
+                        Apply
+                    </button>
+
+                </div>
+
+
+                <small id="promoMsg"></small>
+
+
+                <div class="sumline">
+
+                    <span>Discount</span>
+                    <span id="disc">$0.00</span>
+
+                </div>
+
+
+                <div class="sumline total">
+
+                    <span>Total</span>
+                    <span id="total">$0.00</span>
+
+                </div>
+
+
+                <br>
+
+
+                <button
+                    id="checkout"
+                    class="button"
+                    type="button"
+                >
+                    Continue to checkout
+                </button>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-grid">
+
+
+        <section>
+
+            <h3>
+                <i class="fa-solid fa-mug-hot"></i>
+                BeanBoutique
+            </h3>
+
+            <p>
+                Small-batch coffee, useful brewing gear and friendly
+                coffee events.
+            </p>
+
+            <p>
+                42 Roast Lane<br>
+                Downtown Coffee Quarter
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h3>Explore</h3>
+
+            <a href="coffee.html">Coffee</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="events.html">Events</a>
+            <a href="offers.html">Subscriptions</a>
+
+        </section>
+
+
+        <section>
+
+            <h3>Opening hours</h3>
+
+            <p>
+                Mon–Sat: 8:00–18:00<br>
+                Sun: 9:00–16:00
+            </p>
+
+            <div class="social-links">
+
+                <a
+                    href="https://www.facebook.com/YourPageName"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                >
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a
+                    href="https://www.instagram.com/YourUsername"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a
+                    href="https://www.tiktok.com/@YourUsername"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                >
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h3>Newsletter</h3>
+
+            <form id="footerForm">
+
+                <label class="sr" for="footerEmail">
+                    Email
+                </label>
+
+                <input
+                    id="footerEmail"
+                    type="email"
+                    placeholder="Email address"
+                    required
+                >
+
+                <button type="submit">Join</button>
+
+            </form>
+
+            <small id="footerMsg"></small>
+
+        </section>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <i class="fa-regular fa-copyright"></i>
+        2026 BeanBoutique
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/Final.js"></script>
+
+
+</body>
+
+</html>
